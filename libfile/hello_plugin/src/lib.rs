@@ -1,6 +1,6 @@
 use std::{collections::HashMap, error::Error};
 
-use zoisite_plugin_core::Plugin;
+use zoisite_core::Plugin;
 
 #[derive(Debug)]
 pub struct HelloPlugin;

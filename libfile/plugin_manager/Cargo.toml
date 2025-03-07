@@ -1,5 +1,5 @@
 [package]
-name = "zoisite_plugin_core"
+name = "zoisite_plugin_manager"
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
@@ -13,3 +13,4 @@ categories.workspace = true
 
 [dependencies]
 libloading = { workspace = true }
+zoisite_core = { path = "../../core" }

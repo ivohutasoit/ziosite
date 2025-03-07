@@ -1,12 +1,12 @@
 use std::{collections::HashMap, error::Error};
-use libloading::{Library, Symbol};
 
-pub trait Plugin {
-    fn execute(&self, params: &mut HashMap<String, String>) -> Result<HashMap<String, String>, Box<dyn Error>>;
-}
+use libloading::{Library, Symbol};
+use zoisite_core::Plugin;
+
 
 pub type PluginCreator = unsafe fn() -> Box<dyn Plugin>;
 
+#[derive(Debug)]
 pub struct PluginManager {
     plugin: Box<dyn Plugin>,
     _lib: Library
@@ -31,7 +31,7 @@ impl PluginManager {
 }
 
 impl Plugin for PluginManager {
-    fn execute(&self, params: &mut std::collections::HashMap<String, String>) -> Result<std::collections::HashMap<String, String>, Box<dyn Error>> {
+    fn execute(&self, params: &mut HashMap<String, String>) -> Result<HashMap<String, String>, Box<dyn Error>> {
         self.plugin.execute(params)
     }
 }

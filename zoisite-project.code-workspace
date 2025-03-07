@@ -1,7 +1,10 @@
 {
   "folders": [{
-    "path": "./libfile/plugin_core",
-    "name": "Plugin Core Libfile Based"
+    "path": "core",
+    "name": "Core Library"
+  },{
+    "path": "./libfile/plugin_manager",
+    "name": "Plugin Manager Libfile Based"
   },{
     "path": "./libfile/hello_plugin",
     "name": "Hello Plugin Libfile Based"

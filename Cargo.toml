@@ -1,6 +1,10 @@
 [workspace]
 resolver = "2"
-members = [ "libfile/hello_plugin", "libfile/plugin_core", "libfile/plugin_runner"]
+members = [ 
+    "core", 
+    "libfile/hello_plugin", 
+    "libfile/plugin_manager", 
+    "libfile/plugin_runner"]
 
 [workspace.package]
 version = "0.0.1"

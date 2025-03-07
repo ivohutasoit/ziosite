@@ -1,5 +1,5 @@
 [package]
-name = "zoisite_hello_plugin"
+name = "zoisite_core"
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
@@ -11,8 +11,4 @@ repository.workspace = true
 keyword.workspace = true
 categories.workspace = true
 
-[lib]
-crate-type = ["cdylib"]
-
 [dependencies]
-zoisite_core = { path = "../../core" }
