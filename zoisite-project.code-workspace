@@ -1,0 +1,15 @@
+{
+  "folders": [{
+    "path": "./libfile/plugin_core",
+    "name": "Plugin Core Libfile Based"
+  },{
+    "path": "./libfile/hello_plugin",
+    "name": "Hello Plugin Libfile Based"
+  },{
+    "path": "./libfile/plugin_runner",
+    "name": "Plugin Runner Libfile Based"
+  },{
+    "path": ".",
+    "name": "Zoisite Project"
+  }]
+}

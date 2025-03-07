@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = [ "libfile/hello_plugin", "libfile/plugin_core", "libfile/plugin_runner"]
+
+[workspace.package]
+version = "0.0.1"
+edition = "2024"
+authors = ["Ivo Hutasoit <if09051@gmail.com>"]
+readme = "README.md"
+license = "MIT or Apache-2.0"
+description = "A collection of the plugin based on Rust implementation"
+homepage = "https://github.com/if09051/zoisite"
+repository = "https://github.com/if09051/zoisite"
+keyword = ["plugin", "registry", "trait", "meta-programming"]
+categories = ["rust-lang"]
+
+[workspace.dependencies]
+libloading = "0.8.6"
