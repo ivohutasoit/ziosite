@@ -1,0 +1,19 @@
+[package]
+name = "zoisite_registry_manager"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+readme.workspace = true
+license.workspace = true
+description.workspace = true
+homepage.workspace = true
+repository.workspace = true
+keyword.workspace = true
+categories.workspace = true
+exclude = ["tests"]
+
+[dependencies]
+zoisite_registry_manager_macros = { path = "../registry_manager_macros" }
+
+[dev-dependencies]
+trybuild = "^1.0"

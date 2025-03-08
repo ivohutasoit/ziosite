@@ -1,0 +1,16 @@
+[package]
+name = "zoisite_registry_runner"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+readme.workspace = true
+license.workspace = true
+description.workspace = true
+homepage.workspace = true
+repository.workspace = true
+keyword.workspace = true
+categories.workspace = true
+
+[dependencies]
+zoisite_core = { path = "../../core" }
+zoisite_registry_manager = { path = "../registry_manager" }

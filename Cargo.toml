@@ -4,11 +4,14 @@ members = [
     "core", 
     "libfile/hello_plugin", 
     "libfile/plugin_manager", 
-    "libfile/plugin_runner"]
+    "libfile/plugin_runner", 
+    "registry/registry_manager", 
+    "registry/registry_manager_macros", 
+    "registry/registry_runner"]
 
 [workspace.package]
 version = "0.0.1"
-edition = "2024"
+edition = "2021"
 authors = ["Ivo Hutasoit <if09051@gmail.com>"]
 readme = "README.md"
 license = "MIT or Apache-2.0"
@@ -20,3 +23,9 @@ categories = ["rust-lang"]
 
 [workspace.dependencies]
 libloading = "0.8.6"
+quote = { version = "^1.0", default-features = false }
+proc-macro2 = { version = "^1.0", default-features = false }
+syn = { version = "^2.0", default-features = false, features = ["parsing", "proc-macro", "printing", "full" ] }
+
+[workspace.dev-dependencies]
+trybuild = "^1.0"

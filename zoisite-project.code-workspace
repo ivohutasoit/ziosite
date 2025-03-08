@@ -12,6 +12,15 @@
     "path": "./libfile/plugin_runner",
     "name": "Plugin Runner Libfile Based"
   },{
+    "path": "./registry/registry_manager",
+    "name": "Registry Manager"
+  },{
+    "path": "./registry/registry_manager_macros",
+    "name": "Registry Manager Macros"
+  },{
+    "path": "./registry/registry_runner",
+    "name": "Registry Runner"
+  },{
     "path": ".",
     "name": "Zoisite Project"
   }]
