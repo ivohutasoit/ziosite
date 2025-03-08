@@ -12,5 +12,7 @@ To get started with the project, follow these steps:
 4. You can now use the compiled plugins in your Rust application.
 5. Run this commend below to execute the main program.
    ```sh
-   cargo run -- -l ${PWD}/target/debug -p zoisite_hello_plugin
+   cargo run --bin zoisite_plugin_runner -- -l ${PWD}/target/debug -p zoisite_hello_plugin # for plugin based runner
+
+   cargo run --bin zoisite_registry_runner # for registry based runner
    ```
