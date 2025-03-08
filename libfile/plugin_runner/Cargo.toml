@@ -12,5 +12,6 @@ keyword.workspace = true
 categories.workspace = true
 
 [dependencies]
+clap = { version = "4.5.31", features = ["derive"] }
 zoisite_core = { path = "../../core" }
 zoisite_plugin_manager = { path = "../plugin_manager" }
